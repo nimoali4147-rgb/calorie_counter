@@ -74,11 +74,10 @@ WSGI_APPLICATION = 'calorie_counter.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/6.1/ref/settings/#databases
 
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'calorie_db',
+        'NAME': 'calories_db',
         'USER': 'postgres',
         'PASSWORD': 'niish5679',
         'HOST': 'localhost',
