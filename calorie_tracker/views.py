@@ -5,13 +5,11 @@ from django.db.models import Sum
 
 # Create your views here.
 
-
-\
 def home(request):
 
     foods = Food.objects.all()
 
-    total_calories = foods.aggregate(
+    total_calories = foods.aggregate(   # aggregate - use to calculate total calories
         total=Sum('calories')
     )['total'] or 0
 
@@ -20,14 +18,9 @@ def home(request):
         form = Form(request.POST)
 
         if form.is_valid():
-
-            Food.objects.create(
-                name=form.cleaned_data['name'],
-                calories=form.cleaned_data['calories']
-            )
-
+            form.save()
             return redirect('home')
-
+        
     else:
         form = Form()
 
