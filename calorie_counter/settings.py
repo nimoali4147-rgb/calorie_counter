@@ -27,7 +27,7 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'calorie-counter-qppwxwt5-team-7b2f.vercel.app',
+    'calorie-counter-4thv.vercel.app',
 ]
 
 
