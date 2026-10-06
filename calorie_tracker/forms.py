@@ -9,12 +9,12 @@ class Form(forms.ModelForm):
 
         widgets = {
             'name': forms.TextInput(attrs={
-                'class': 'w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-500',
+                'class': 'w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-400',
                 'placeholder': 'e.g. Chicken'
             }),
 
             'calories': forms.NumberInput(attrs={
-                'class': 'w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-500',
+                'class': 'w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-400',
                 'placeholder': 'e.g. 350',
                 'min': '1'
             }),
